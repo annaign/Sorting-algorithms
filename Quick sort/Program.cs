@@ -70,7 +70,7 @@ namespace SortingAlgorithms
                     pivotEqual++;
                 }
             }
-            //Console.Write("n={0} {1} {2} b={3}: ", num, start, end, border);
+            //Console.Write("n={0} {1} {2} b={3}: ", pivotEqual, start, end, border);
             //PrintArray(array);
 
             return new int[] { border, pivotEqual };
