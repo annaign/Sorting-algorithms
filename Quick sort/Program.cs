@@ -48,7 +48,7 @@ namespace SortingAlgorithms
             }
 
             if (middle[0] + middle[1] < end)
-                Quicksort(array, middle[0] + middle[1], end);
+                Quicksort(array, middle[0] + middle[1] + 1, end);
         }
 
         static int[] Split(int[] array, int start, int end, int pivot)
@@ -70,7 +70,7 @@ namespace SortingAlgorithms
                     pivotEqual++;
                 }
             }
-            //Console.Write("n={0} {1} {2} b={3}: ", pivotEqual, start, end, border);
+            //Console.Write("n={0} {1} {2} b={3}: ", pivot, start, end, border);
             //PrintArray(array);
 
             return new int[] { border, pivotEqual };
